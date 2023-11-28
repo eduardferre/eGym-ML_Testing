@@ -1,0 +1,11 @@
+node_modules
+package-lock.json
+
+dist
+
+.venv
+.hypothesis
+.ipynb_checkpoints
+.cache
+.DS_Store
+.vscode

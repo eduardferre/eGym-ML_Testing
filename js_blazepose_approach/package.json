@@ -1,0 +1,34 @@
+{
+  "name": "js_blazepose_approach",
+  "version": "1.0.0",
+  "description": "",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow-models/pose-detection": "^2.1.3",
+    "@tensorflow/tfjs-backend-webgl": "^4.13.0",
+    "@tensorflow/tfjs-converter": "^4.13.0",
+    "@tensorflow/tfjs-core": "^4.13.0"
+  },
+  "main": "index.js",
+  "homepage": "index.html",
+  "scripts": {
+    "watch": "cross-env NODE_ENV=development parcel *.html --no-hmr --open",
+    "build": "cross-env NODE_ENV=production parcel build *.html --public-url ./"
+  },
+  "browser": {
+    "crypto": false
+  },
+  "devDependencies": {
+    "@babel/core": "7.23.3",
+    "@babel/plugin-transform-runtime": "7.23.4",
+    "babel-preset-env": "1.7.0",
+    "cross-env": "7.0.3",
+    "parcel-bundler": "1.12.5",
+    "nodemon": "3.0.1",
+    "standard": "17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  }
+}
