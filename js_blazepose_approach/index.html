@@ -8,15 +8,16 @@
 
 <body>
   <div class="canvas-wrapper">
-    <canvas id="output"></canvas>
-    <video id="video" autoplay playsinline style="
-          -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-          visibility: hidden;
-        "></video>
+    <canvas id="output" width="640" height="480"></canvas>
+    <video id="video" controls="true" width="640" height="480" playsinline style="
+          visibility: visible;
+        ">
+      <source src="deadlift.mp4" type="video/mp4">
+      Sorry, your browser does not support HTML5 video.
+    </video>
   </div>
 </body>
 
-<script src="./index.js"></script>
+<script src="./blazepose.js"></script>
 
 </html>
