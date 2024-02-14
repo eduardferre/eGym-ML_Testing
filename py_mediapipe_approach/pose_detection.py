@@ -13,7 +13,7 @@ mp_pose = mp.solutions.pose  # type: ignore
 counter = 0
 stage = None
 
-with open("deadlift.pk1", "rb") as f:
+with open("deadlift1.pkl", "rb") as f:
     model = pickle.load(f)
 
 with mp_pose.Pose(
